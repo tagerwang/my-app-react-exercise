@@ -5,7 +5,7 @@ let storeState = {
   userInfo: null
 }
 function changeCountReducer( state = storeState, actions ){
-  console.log('changeCountReducer===', state.count)
+  console.log('changeCountReducer===', state)
   switch( actions.type ){
       case change_count:
           return { ...state, count: actions.data.count }
@@ -14,7 +14,7 @@ function changeCountReducer( state = storeState, actions ){
   }
 }
 function addCountReducer( state = storeState, actions ){
-  console.log('addCountReducer===', state.count)
+  console.log('addCountReducer===', state)
   switch( actions.type ){
       case add_count:
           return { ...state, count: state.count + 1 }

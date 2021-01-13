@@ -15,6 +15,7 @@ import {changeCount, addCount} from "./redux/actions"
 
 // Map Redux state to component props
 function mapStateToProps(state) {
+  console.log('mapStateToProps', state)
   const {changeCountReducer, addCountReducer} = state
   return {
     value: changeCountReducer.value,
